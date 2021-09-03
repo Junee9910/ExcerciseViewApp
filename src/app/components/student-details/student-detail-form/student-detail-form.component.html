@@ -1,0 +1,38 @@
+<form>
+  <input type="hidden" name="studentId" [value]="service.formData.studentId" />
+  <div class="from-row">
+    <div class="form-group col-md-6">
+        <label>Last Name</label>
+      <input
+        type="text"
+        class="form-control form-control-lg"
+        placeholder="Last Name"
+        name="lastName"
+        #lastName="ngModel"
+        [(ngModel)]="service.formData.lastName"
+      />
+    </div>
+    <div class="form-group col-md-6">
+      <label>First Mid Name</label>
+      <input
+        type="text"
+        class="form-control form-control-lg"
+        placeholder="First Mid Name"
+        name="firstMidName"
+        #firstMidName="ngModel"
+        [(ngModel)]="service.formData.firstMidName"
+      />
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Enrollment Date</label>
+    <input
+      type="text"
+      class="form-control form-control-lg"
+      placeholder="dd/mm/yy"
+      name="enrollmentDate"
+      #enrollmentDate="ngModel"
+      [(ngModel)]="service.formData.enrollmentDate"
+    />
+  </div>
+</form>
